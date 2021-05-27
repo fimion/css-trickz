@@ -1,0 +1,26 @@
+{
+  "name": "css-trickz",
+  "version": "1.0.0",
+  "description": "WHY",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "netlify dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fimion/css-trickz.git"
+  },
+  "keywords": [
+    "no"
+  ],
+  "author": "Alex Riviere",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fimion/css-trickz/issues"
+  },
+  "homepage": "https://github.com/fimion/css-trickz#readme",
+  "devDependencies": {
+    "netlify-cli": "^3.31.11"
+  }
+}
