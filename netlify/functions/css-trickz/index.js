@@ -23,11 +23,11 @@ const request =  ((urlOptions, data="") => {
   });
 
 function getAuthors (post){
-    return post?._embedded?.author?.reduce((acc,auth)=>acc+`<span class="author">${auth.name}</span>`, '');
+    return post._embedded.author.reduce((acc,auth)=>acc+`<span class="author">${auth.name}</span>`, '');
 }
 
 function getArticles(articles){
-    return articles?.reduce((acc, post)=>{
+    return articles.reduce((acc, post)=>{
         return acc + `<article>
         <h2 class="title"><a href="${post.link}">${post.title.rendered}</a></h2>
         <p class="authors"> Written by: ${getAuthors(post)} </p>
