@@ -37,8 +37,7 @@ header a:focus{
 
 .articles{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
+    grid-template-columns: repeat( auto-fit, minmax(45ch, 1fr) );
 }
 
 article {
