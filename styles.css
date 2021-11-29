@@ -37,6 +37,8 @@ header a:focus{
 
 .articles{
     display: grid;
+    padding: 10px;
+    gap: 20px;
     grid-template-columns: repeat( auto-fit, minmax(45ch, 1fr) );
 }
 
@@ -44,7 +46,6 @@ article {
     background-color: white;
     border-radius: 20px;
     padding: 20px;
-    margin: 10px;
     color: black;
 }
 .authors{
