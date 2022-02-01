@@ -22,8 +22,10 @@ function getArticles(articles){
 async function createHTMLDoc(response){
 
     const index = await readFile(path.join(__dirname,'index.html'));
-    const indexBody = index.toString('utf-8');
+    let indexBody = index.toString('utf-8');
     const articles = JSON.parse(response.body);
+
+    indexBody = indexBody.replace('{{generatedDateTime}}',(new Date()).toISOString());
 
     return indexBody.replace('{{addArticles}}', getArticles(articles));
 }

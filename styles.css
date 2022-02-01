@@ -56,6 +56,7 @@ article {
 }
 footer{
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -63,4 +64,8 @@ footer{
 footer > p {
     font-family: 'Irish Grover', cursive;
     font-size: xx-large;
+}
+
+footer > p.small{
+    font-size: medium;
 }
