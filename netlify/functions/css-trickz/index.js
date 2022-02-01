@@ -32,6 +32,8 @@ async function createHTMLDoc(response){
 
 async function cssTrickz(event, context) {
 
+    console.log("Running Build Method.");
+
     const requestOpts = new URL("https://css-tricks.com/wp-json/wp/v2/posts?per_page=12&_embed=1&_fields=title,link,excerpt,_links.author");
     try {
         const cssTricks = await request(requestOpts);
