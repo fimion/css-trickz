@@ -1,2 +1,2 @@
 [functions."trigger-rebuild"]
-schedule = "*/5 * * * *"
+schedule = "0 */6 * * *"
