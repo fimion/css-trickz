@@ -35,7 +35,12 @@ async function cssTrickz(event, context) {
     const requestOpts = new URL("https://css-tricks.com/wp-json/wp/v2/posts?per_page=12&_embed=1&_fields=title,link,excerpt,_links.author");
     try {
         const cssTricks = await request(requestOpts);
-        return {statusCode:200, headers:{"content-type":'text/html'}, body: await createHTMLDoc(cssTricks)};
+        return {
+            statusCode:200, 
+            headers:{"content-type":'text/html'}, 
+            body: await createHTMLDoc(cssTricks),
+            ttl: 60,
+        };
     } catch(e) {
         console.log(e);
         return { statusCode: 500, body: JSON.stringify(e)};
