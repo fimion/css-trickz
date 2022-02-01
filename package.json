@@ -21,7 +21,10 @@
   },
   "homepage": "https://github.com/fimion/css-trickz#readme",
   "devDependencies": {
-    "@netlify/functions": "^0.7.2",
-    "netlify-cli": "^3.31.11"
+    "@netlify/functions": "^0.11.0",
+    "netlify-cli": "^3.39.4"
+  },
+  "dependencies": {
+    "axios": "^0.25.0"
   }
 }
