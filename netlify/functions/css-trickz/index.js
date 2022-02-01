@@ -41,7 +41,7 @@ async function cssTrickz(event, context) {
             statusCode:200, 
             headers:{"content-type":'text/html'}, 
             body: await createHTMLDoc(cssTricks),
-            ttl: 60,
+            ttl: 3600,
         };
     } catch(e) {
         console.log(e);
