@@ -1,71 +1,85 @@
-*{margin:0;padding:0;box-sizing: border-box;}
-
-html{
-    background-color: black;
-    color: white;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Irish Grover', cursive;
+html {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Irish Grover", cursive;
 }
 
 header {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    padding: 10px
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
 }
 
 header > h1 {
-    text-transform: uppercase;
-    font-size: 64px;
-    color: hotpink;
-    text-shadow: 3px 3px 0px blue,
-                 6px 6px 0px yellow,
-                 9px 9px 0px rebeccapurple,
-                 12px 12px 0px lawngreen;
+  text-transform: uppercase;
+  font-size: 64px;
+  color: hotpink;
+  text-shadow: 3px 3px 0px blue, 6px 6px 0px yellow, 9px 9px 0px rebeccapurple,
+    12px 12px 0px lawngreen;
+}
+
+header > h1 > small {
+  text-transform: none;
+  color: white;
+  text-shadow: none;
+  font-size: 0.5em;
 }
 header a,
 header a:link,
 header a:active,
 header a:hover,
-header a:focus{
-    color: hotpink;
+header a:focus {
+  color: hotpink;
 }
 
-.articles{
-    display: grid;
-    padding: 10px;
-    gap: 20px;
-    grid-template-columns: repeat( auto-fit, minmax(45ch, 1fr) );
+.articles {
+  display: grid;
+  padding: 10px;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(45ch, 1fr));
 }
 
 article {
-    background-color: white;
-    border-radius: 20px;
-    padding: 20px;
-    color: black;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  color: black;
 }
-.authors{
-    font-size: .9em;
+.authors {
+  font-size: 0.9em;
 }
-.excerpt{
-    margin: 10px 0;
+.excerpt {
+  margin: 10px 0;
 }
-footer{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 footer > p {
-    font-family: 'Irish Grover', cursive;
-    font-size: xx-large;
+  font-family: "Irish Grover", cursive;
+  font-size: xx-large;
 }
 
-footer > p.small{
-    font-size: medium;
+footer > p.small {
+  font-size: medium;
 }
