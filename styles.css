@@ -16,7 +16,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Irish Grover", cursive;
+  font-family: "Shantell Sans", cursive;
+  font-weight: 600;
+  font-variation-settings: "BNCE" 50, "INFM" 100;
 }
 
 header {
@@ -40,6 +42,7 @@ header > h1 > small {
   color: white;
   text-shadow: none;
   font-size: 0.5em;
+  font-weight: 400;
 }
 header a,
 header a:link,
@@ -76,8 +79,9 @@ footer {
   padding: 20px;
 }
 footer > p {
-  font-family: "Irish Grover", cursive;
+  font-family: "Shantell Sans", cursive;
   font-size: xx-large;
+  font-weight: 300;
 }
 
 footer > p.small {
